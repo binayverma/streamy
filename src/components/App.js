@@ -12,12 +12,12 @@ const App = () => {
   return (
     <div>
       <Router history={history}>
-        <div>
+        <div className="ui container">
           <Header />
           <Route path="/" exact component={StreamList} />
           <Route path="/streams/new" component={StreamCreate} />
           <Route path="/streams/edit/:id" component={StreamEdit} />
-          <Route path="/streams/show/:id" component={StreamShow} />
+          <Route path="/streams/show" component={StreamShow} />
           <Route path="/streams/delete/:id" component={StreamDelete} />
         </div>
       </Router>
